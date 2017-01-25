@@ -5,6 +5,6 @@ This is the repository that contains all lessons and assignments for the course,
 
 ##Table of Contents
 
-* [Lesson 01 - Basic HTML/CSS](lessons/lesson-01.md)
+* [Lesson 01 - Basic HTML/CSS](lessons/Lesson-01.md)
 * [Lesson 02 - Github](lessons/lesson-02.md)
 
