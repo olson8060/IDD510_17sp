@@ -1,4 +1,4 @@
-# Lesson 01 - Bassic HTML/CSS
+# Lesson 01 - Basic HTML/CSS
 
 In this course you will learn basic HTML and CSS. This lesson's project will be to start a basic styleguie.
 
