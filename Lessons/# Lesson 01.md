@@ -9,7 +9,7 @@ HTML links, lists, tables
 Styleguides
 Resources
 
-https://www.khanacademy.org/computing/computer-programming/html-css
+[Khan Academy-CSS/HTML](https://www.khanacademy.org/computing/)computer-programming/html-css
 
 http://stackoverflow.com/
 
