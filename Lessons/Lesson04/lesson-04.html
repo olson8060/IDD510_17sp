@@ -24,7 +24,7 @@
 
  
 	  #pattern {
-	  	margin-top: -100px;
+	  	margin-top: -80px;
 	  	position: absolute;
 	  }
 
@@ -32,7 +32,7 @@
 	  #logo img {
 	  	margin: 0px auto;
 	  	float: middle;
-	  	margin-top: 50px;
+	  	margin-top: 30px;
 	  	display: block;
 	  	position:relative;
 	  	z-index: 1;
@@ -40,63 +40,48 @@
 
 
 	  #container {
-	  	width: 400px;
+	  	width: 500px;
 	  	margin: auto;
 	  }
 
 	  h1 {
-	  	font-size: 28px;
+	  	font-size: 34px;
 	  	position: relative;
 	  	color: #494848;
 	  	z-index: 1;
 	  	text-align: center;
 	  	margin-bottom: 110px;
 	  	font-weight: 300;
+
 	  }
 
 
 
 	  h2, h2 i {
-	  	position: relative;
+	  	
 	  	color: #c3c3c3;
-	  	z-index: 1;
-	  	font-size: 20px;
+	  	font-size: 30px;
 	  	font-weight: 100;
 	  	margin-top: 20px;
 	  }
 
-	  .skill {
-	  	float:left;
-	  	margin: auto 10px;
-	  	text-align: center;
-	  	margin-top: 20px;
-	  	margin-right: 30px;
-	  	margin-bottom: 40px;
-	  }
-
-	  .w3-container {
-	  	width: 50px;
-	  	height: 60px;
-	  	background-color: #c3c3c3;
-	  	margin-top: 20px;
-	  	margin: auto;
-	  }
+	 
 
 	  p {
 	  	font-size: 16px;
 	  	font-weight: 100;
+	  	line-height: 1.5;
 	  }
 
 	 
 	  .rule {
 	  	height: 1px;
 	  	background-color: #d8dd8c;
-	  	display: block;
 	  }
 	
 
 	  .bold {
-	  	font-size: 34px;
+	  	font-size: 38px;
 	  	font-weight: 900;
 	  	color: #c3c3c3;
 	  }
@@ -121,8 +106,141 @@
 	  	width:100%;
 	  	height: 70px;
 	  	background-color: #c3c3c3;
+	  	margin-top: 50px;
+	  	float: left;
 	  }
+
+
+	  #thumbnails li a img {
+	  	width: 200px;
+	  	height: 200px;
+	  	float: left;
+	  	padding: 5px;
+	  	margin: 10px;
+	  	border: none !important; 
+	  	border-radius: 3px !important;
+	  	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) 
+	  }
+
+	  #thumbnails ul {
+	  	position: relative;
+	  	width: 800px;
+	  	height: 300px;
+	  	list-style-type: none;
+	  	margin: auto 0px;
+
+
+	  }
+
+	img:hover {
+	  	opacity: 0.5;
+	  }
+
+	  #thumbnails {
+	  	width: 800px;
+	  	margin: auto;
+	  	display: block;
+
+	  }
+
+
+
+
+/* –––––––––––– MEDIA QUERIES START HERE ---------- */
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 1600px) {
+
+      h1 {
+	  	font-size: 34px;
+	  }
+	  .bold {
+	  	font-size: 34;
+	  }   
+	  #container {
+	  	width: 500px;
+	  	margin: auto;
+	  }
+
+	  #thumbnails ul {
+	  	position: relative;
+	  	width: 800px;
+	  	height: 450px;
+	  	list-style-type: none;
+	  	margin: auto 0px;
+	  	margin-left: -110px;
+	  }
+
+	 
+
+}
+
+
+/* iPads  --------------------- */
+@media only screen and (max-width: 768px) {
+
+      h1 {
+	  	font-size: 30px;
+	  	margin-top: 30px;
+	  }
+	  .bold {
+	  	font-size: 30;
+	  }
+	  #container {
+	  	width: 400px;
+	  	margin: auto;
+	  }
+	  #thumbnails ul {
+	  	position: relative;
+	  	width: 600px;
+	  	height: 680px;
+	  	list-style-type: none;
+	  	margin: auto 0px;
+	  	margin-left: -65px;
+
+	  }
+	
+}
+
+
+/* Smartphones ----- */
+@media only screen and (max-width: 420px) {
+
+      h1 {
+	  	font-size: 30px;
+	  	margin-top: 35px;
+	  }
+
+	  .bold {
+	  	font-size: 30;
+	  }
+
+	  #container {
+	  	width: 300px;
+	  }
+
+	  #thumbnails ul {
+	  	position: relative;
+	  	width: 320px;
+	  	height: 480px;
+	  	list-style-type: none;
+	  	margin: auto 0px;
+	  }
+
+	  #thumbnails li a img {
+	  	width: 130px;
+	  	height: 130px;
+	  	margin: 10px;
+	  	padding: 5px;
+	  	margin-left: -40px;
+	  	margin-right: 60px;
+	  }
+	 
+
+}
 		
+
+/* –––––––––––– MEDIA QUERIES ENDS HERE ---------- */
 
 
 	</style>
@@ -135,11 +253,11 @@
 
 	<body>
 
-	  <div id="pattern"><img src="http://i.imgur.com/qsiewsr.png" alt="patternbackground" width="1333px" height="400"/></a>
+	  <div id="pattern"><img src="http://i.imgur.com/qsiewsr.png" alt="patternbackground" width="100%" height="400"/></a>
 	  </div>
 
 
-	  <div id="logo"><img src="http://i.imgur.com/L05CMWH.png" alt="JamieOlsonDesign" width="120px"/></div>
+	  <div id="logo"><img src="http://i.imgur.com/L05CMWH.png" alt="JamieOlsonDesign" width="130px"/></div>
 
 	  <h1>Always chasing a <br><span class="bold">creative high.</span></h1>
 
@@ -151,42 +269,26 @@
 
 	    <p>Visual and digital design, as well as a genuine sense of human understanding have compelled me into the UI/UX field. I hope to use my insights and creativity to solve some of the greatest challenges.</p>
 
-	    <br>
+        <br>
 
-	    <h2><i>Over 6 Years of Experience</i></h2>
+        <h2><i>Folio</i></h2>
 
 	    <div class="rule"></div>
- 
-
-	    <div class="skill">
-	    	<div class="w3-container">
-	    	  <div class="w3-center w3-animate-bottom" height="50px"></div>
-	    	</div>
-	    	<p>Visual</p>
-	    </div>
-
-	    <div class="skill">
-	    	<div class="w3-container">
-	    	  <div class="w3-center w3-animate-bottom" height="50px"></div>
-	    	</div>
-	    	<p>Advertising</p>
-	    </div>
-
-	    <div class="skill">
-	    	<div class="w3-container">
-	    	  <div class="w3-center w3-animate-bottom" height="40px"></div>
-	    	</div>
-	    	<p>Digital</p>
-	    </div>
-
-	    <div class="skill">
-	        <div class="w3-container">
-	    	  <div class="w3-center w3-animate-bottom" height="30px"></div>
-	        </div>
-	    	<p>UI/UX</p>
-	    </div>
-
 	    <br>
+
+
+       <div id="thumbnails">
+	  	  <ul>
+	  	    <li><a href="https://www.behance.net/gallery/37396629/Commercial-congeries"><img src="http://i.imgur.com/dSo3jy8.jpg" alt="advertising portfolio"/></a></li>
+	  	    <li><a href="https://www.behance.net/gallery/37396629/Commercial-congeries"><img src="http://i.imgur.com/gLfHhEs.jpg" alt="advertising portfolio"/></a></li>
+	  	    <li><a href="https://www.behance.net/gallery/40719347/The-Untangled-Web"><img src="http://i.imgur.com/VI7w9Jv.jpg" alt="digital portfolio"/></a></li>
+	  	    <li><a href="https://www.behance.net/gallery/37396261/The-Practice-of-Pixel-Pushing"><img src="http://i.imgur.com/uLlIEbZ.jpg" alt="illustration portfolio"/></a></li>
+	  	    <li><a href="https://www.behance.net/gallery/37218863/Let-Me-Introduce-Myself"><img src="http://i.imgur.com/51ZEceo.jpg" alt="logo portfolio"/></a></li>
+	  	    <li><a href="https://www.behance.net/gallery/40719539/Adfed-The-Show-2016"><img src="http://i.imgur.com/wMkOBRY.jpg" alt="ads in wonderland portfolio"/></a></li>
+
+	  	  </ul>
+	    </div>
+
 	    <br>
 	    <br>
 
@@ -196,13 +298,9 @@
 
 	   <div class="link">JamieElizabethOlson@gmail.com</div>
 
-	    <div id="thumnails">
-	  	  <div class="polygon"></div>
-	  	  <div class="polygon"></div>
-	  	  <div class="polygon"></div>
-	    </div>
 
 	  </div> 
+
 
 	  <div id="footer"></div>
 
