@@ -28,6 +28,7 @@
 		#pattern {
 			margin-top: -80px;
 			position: absolute;
+			z-index: -1;
 		}
 
 
@@ -44,6 +45,7 @@
 		#container {
 			width: 500px;
 			margin: auto;
+			padding-top: 20px;
 		}
 
 		h1 {
@@ -90,19 +92,24 @@
 			transition: ease-in .2s;
 		}
 
+
 		.link {
-			text-decoration: none;
-			color: #c3c3c3;
-			font-weight: 300;
 			margin-top: 20px;
 			margin-bottom: 40px;
 		}
 
-		.link:hover {
+
+		.link a {
+			text-decoration: none;
+			color: #c3c3c3;
+			font-weight: 300;
+		}
+
+		.link a:hover {
 			color: black;
 		}
 
-		.link:active {
+		.link a:active {
 			color: #d8dd8c;
 		}
 
@@ -149,6 +156,12 @@
 		i {
 			width: 35px;
 			margin-bottom: 70px;
+		}
+
+		.base {
+			background-color: white;
+			width: 100%;
+			z-index: -3;
 		}
 
 
@@ -276,7 +289,7 @@
 
 <body>
 
-	<div id="pattern"><img src="http://i.imgur.com/qsiewsr.png" alt="patternbackground" width="100%" height="400"/></a>
+	<div id="pattern"><img src="http://i.imgur.com/qsiewsr.png" alt="patternbackground"/></a>
 	</div>
 
 
@@ -284,50 +297,52 @@
 
 	<h1>Always chasing a <br><span class="bold">creative high.</span></h1>
 
-	<div id="container">
+	<div class="base">
 
-		<h2><i>Purpose</i></h2>
+		<div id="container">
 
-		<div class="rule"></div>
+			<h2><i>Purpose</i></h2>
 
-		<p>Visual and digital design, as well as a genuine sense of human understanding have compelled me into the UI/UX field. I hope to use my insights and creativity to solve some of the greatest challenges.</p>
+			<div class="rule"></div>
 
-		<br>
+			<p>Visual and digital design, as well as a genuine sense of human understanding have compelled me into the UI/UX field. I hope to use my insights and creativity to solve some of the greatest challenges.</p>
 
-		<h2><i>Folio</i></h2>
+			<br>
 
-		<div class="rule"></div>
-		<br>
+			<h2><i>Folio</i></h2>
 
-
-		<div id="thumbnails">
-			<ul>
-				<li><a href="https://www.behance.net/gallery/37396629/Commercial-congeries"><img src="http://i.imgur.com/dSo3jy8.jpg" alt="advertising portfolio"/></a></li>
-				<li><a href="https://www.behance.net/gallery/37396629/Commercial-congeries"><img src="http://i.imgur.com/gLfHhEs.jpg" alt="advertising portfolio"/></a></li>
-				<li><a href="https://www.behance.net/gallery/40719347/The-Untangled-Web"><img src="http://i.imgur.com/VI7w9Jv.jpg" alt="digital portfolio"/></a></li>
-				<li><a href="https://www.behance.net/gallery/37396261/The-Practice-of-Pixel-Pushing"><img src="http://i.imgur.com/uLlIEbZ.jpg" alt="illustration portfolio"/></a></li>
-				<li><a href="https://www.behance.net/gallery/37218863/Let-Me-Introduce-Myself"><img src="http://i.imgur.com/51ZEceo.jpg" alt="logo portfolio"/></a></li>
-				<li><a href="https://www.behance.net/gallery/40719539/Adfed-The-Show-2016"><img src="http://i.imgur.com/wMkOBRY.jpg" alt="ads in wonderland portfolio"/></a></li>
-
-			</ul>
-		</div>
-
-		<br>
-		<br>
-
-		<h2><i>Drop me a line</i></h2>
-
-		<div class="rule"></div>
-
-		<div class="link">JamieElizabethOlson@gmail.com</div>
-
-		<i class="fa fa-twitter" aria-hidden="true"></i>
-		<i class="fa fa-facebook" aria-hidden="true"></i>
-		<i class="fa fa-linkedin" aria-hidden="true"></i>
+			<div class="rule"></div>
+			<br>
 
 
-	</div> 
+			<div id="thumbnails">
+				<ul>
+					<li><a href="https://www.behance.net/gallery/37396629/Commercial-congeries"><img src="http://i.imgur.com/dSo3jy8.jpg" alt="advertising portfolio"/></a></li>
+					<li><a href="https://www.behance.net/gallery/37396629/Commercial-congeries"><img src="http://i.imgur.com/gLfHhEs.jpg" alt="advertising portfolio"/></a></li>
+					<li><a href="https://www.behance.net/gallery/40719347/The-Untangled-Web"><img src="http://i.imgur.com/VI7w9Jv.jpg" alt="digital portfolio"/></a></li>
+					<li><a href="https://www.behance.net/gallery/37396261/The-Practice-of-Pixel-Pushing"><img src="http://i.imgur.com/uLlIEbZ.jpg" alt="illustration portfolio"/></a></li>
+					<li><a href="https://www.behance.net/gallery/37218863/Let-Me-Introduce-Myself"><img src="http://i.imgur.com/51ZEceo.jpg" alt="logo portfolio"/></a></li>
+					<li><a href="https://www.behance.net/gallery/40719539/Adfed-The-Show-2016"><img src="http://i.imgur.com/wMkOBRY.jpg" alt="ads in wonderland portfolio"/></a></li>
 
+				</ul>
+			</div>
+
+			<br>
+			<br>
+
+			<h2><i>Drop me a line</i></h2>
+
+			<div class="rule"></div>
+
+			<div class="link"><a href="mailto:jamieelizabetholson@gmail.com">JamieElizabethOlson@gmail.com</a></div>
+
+			<i class="fa fa-twitter" aria-hidden="true"></i>
+			<i class="fa fa-facebook" aria-hidden="true"></i>
+			<i class="fa fa-linkedin" aria-hidden="true"></i>
+
+
+		</div> 
+	</div>
 
 	<div id="footer">
 	</div>
