@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>Sass BBQ Atomic Style Guide</title>
+
+<head>
+
+	<!-- __BEGIN FONTS__ -->
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet">
+
+	<script src="https://use.fontawesome.com/83584a518f.js"></script>
+
+	<!-- __BEGIN CSS__ -->
+
+	<style>
+
+		h1 {
+			font-family: 'Raleway', sans-serif;
+			font-weight: 900;
+			color: #f2f2f3;
+			margin-left: 20px;
+			margin-top: 30px;
+			text-shadow: 1px 1px 3px #000000;
+			line-height: .9;
+			text-transform: uppercase;
+		}
+
+		h2 {
+			color: #ffffff;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 700;
+			margin-left: 20px;
+		}
+
+		h3 {
+			color: #000000;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 700;
+			font-size: 16pt;
+			margin-left: 20px;
+			margin-bottom: 5px;
+		}
+
+		h4 {
+			color: #d6d6d6;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 700;
+			font-size: 10pt;
+			margin-left: 20px;
+			margin-bottom: 10px;
+		}
+
+		h5 {
+			color: #777777;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 1.3;
+			margin-left: 20px;
+		}
+
+		p {
+			color: #f2f2f3;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 1.3;
+			margin-left: 20px;
+		}
+
+		body {
+			background-color: #561823;
+		}
+
+		button.postbtn {
+			width: 320px;
+			background-color: white;
+			border: 2px solid #d6d6d6;
+			box-shadow: 4px 4px 6px #381217;
+			padding: 15px;
+			float: left;
+			display: block;
+			margin-left: 20px;
+		}
+
+		button.postbtn:hover {
+			width: 320px;
+			background-color: #d6d6d6;
+			border: 2px solid #d6d6d6;
+			box-shadow: 4px 4px 6px #381217;
+			padding: 15px;
+		}
+
+		button.postbtn a {
+			color: #561823;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 700;
+			font-size: 10pt;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+
+		.circlecontainer {
+			width: 200px;
+		}
+
+		button.circlebtn1 {
+			width: 30px;
+			height: 30px;
+			border-radius: 100%;
+			background-color: #4d4d4f;
+			border: none;
+			margin-left: 5px;
+			margin-top: 10px;
+		}
+
+		button.circlebtn1 a {
+			color: #f2f2f3;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 700;
+			font-size: 12pt;
+			text-decoration: none;
+		}
+
+		button.circlebtn2 {
+			width: 30px;
+			height: 30px;
+			border-radius: 100%;
+			color: #561823;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 700;
+			font-size: 12pt;
+			background-color: white;
+			border: 2px solid #d6d6d6;
+			margin: 0px auto;
+			margin-left: 20px;
+		}
+
+		button.circlebtn2 a {
+			color: #561823;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 700;
+			font-size: 12pt;
+			text-decoration: none;
+		}
+
+		button.circlebtn2:hover {
+			background-color: #d6d6d6;
+			border: none;
+			color: #f2f2f3;
+		}
+
+		.logo {
+			width: 200px;
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+
+		.logo img {
+			width: 200px;
+		}
+
+		.nav {
+			margin-top: 20px;
+			margin-left: 20px;
+			width: 70px;
+		}
+
+		.navbutton {
+			width: 70px;
+			height: 30px;
+			background-color: #561823;
+			border: none;
+			margin: -5px;
+			padding: 15%;
+			box-shadow: 4px 4px 4px #000000;
+		}
+
+		.navbutton:hover {
+			background-color: #381217;
+		}
+
+		.navbutton:active {
+			background-color: #4d4d4f;
+		}
+
+		.navbutton a {
+			text-decoration: none;
+			color: #f2f2f3;
+		}
+
+		.search {
+			width: 160px;
+			margin-left: 20px;
+			margin-top: 10px;
+		}
+
+
+		#search input[type="text"] {
+			background-color: #fcfcfc;
+			border: 1px solid #d1d1d1;
+			font-family: 'Raleway', sans-serif;
+			color: #bebebe;
+			width: 150px;
+			padding: 6px 34px 6px 15px;
+			-webkit-border-radius: 20px;
+			-moz-border-radius: 20px;
+			border-radius: 20px;
+			text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+			-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+			-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+			-webkit-transition: all 0.7s ease 0s;
+			-moz-transition: all 0.7s ease 0s;
+			-o-transition: all 0.7s ease 0s;
+			transition: all 0.7s ease 0s;
+		}
+
+		#search input[type="text"]:focus {
+			width: 150px;
+		}
+
+		input[type=checkbox] {
+			-webkit-appearance: none;
+			background-color: white;
+			border: 2px solid #d6d6d6;
+			border-radius: 3px;
+			width: 15px;
+			height: 15px;
+			margin-left: 20px;
+			margin-top: 8px;
+			margin-right: 10px;
+		}
+
+		input[type=checkbox]:hover {
+			background-color: #d6d6d6;
+		}
+
+
+		input[type=checkbox]:checked {
+			background-color: #4d4d4f;
+			border: 2px solid #4d4d4f;
+		}
+
+		li {
+			list-style-type: none;
+		}
+
+		input[type=radio] {
+			-webkit-appearance: none;
+			width: 13px;
+			height: 13px;
+			float: left;
+			margin-right: 8px;
+			margin-left: 20px;
+			margin-bottom: 20px;
+			background-color: white;
+			border: 2px solid #d6d6d6;
+			border-radius: 100%;
+		}
+
+		input[type=radio]:hover {
+			background-color: #d6d6d6;
+		}
+
+		input[type=radio]:checked {
+			-webkit-appearance: none;
+			width: 13px;
+			height: 13px;
+			float: left;
+			margin-right: 10px;
+			background-color: #4d4d4f;
+			border: 2px solid #4d4d4f;
+			border-radius: 100%;
+		}
+
+		.postbackground {
+			background-color: white;
+			border: 2px solid #d6d6d6;
+			box-shadow: 4px 4px 6px #381217;
+			padding: 20px;
+			margin-top:40px;
+			padding-top: 20px;
+			height: 220px;
+			width:450px;
+			margin-left: 20px;
+			margin-bottom: 50px;
+		}
+
+
+		textarea {
+			outline: none;
+			resize: none;
+			width: 95%;
+			height: 80px;
+			margin-top: 10px;
+			padding: 10px;
+		}
+
+		.postbackground h3 {
+			float: left;
+			margin-top: -50px;
+			margin-left: 70px;
+		}
+
+		.postbackground h4 {
+			float: left;
+			margin-top: -20px;
+			margin-left: 70px;
+		}
+
+		.image {
+			width: 100%;
+			border: none;
+			margin-top: 15px;
+		}
+
+		.image i {
+			width: 25px;
+			height: 25px;
+			float: left;
+			margin-right: -2px;
+			margin-top: 0px;	
+		}
+
+		.image h4 {
+			float: left;
+			margin-top: 0px;
+			margin-left: 0px;
+		}
+
+		h6 {
+			color: #ffffff;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 300;
+			margin-left: 20px;
+			font-size: 26px;
+			margin-bottom: -15px;
+		}
+
+		
+
+
+
+	</style>
+
+
+</head>
+
+<!-- __BEGIN BODY__ -->
+
+<body>
+	<div class="logo"><img src="http://i.imgur.com/EJJTO9k.png" alt="logo"/></div>
+	<h1>Sass Woodfire Barbecue Stylesheet</h1>
+	<br>
+	<h6>ATOMS</h6>
+	<p>HEADINGS</p>
+	<h1>This is an H1.</h1>
+	<h2>This is an H2.</h2>
+	<h3>This is an H3.</h3>
+	<h4>This is an H4.</h4>
+	<h5>This is an H5.</h5>
+	<p>This is a paragraph.</p>
+	<br>
+	<p>CHECKBOXES</p>
+	<li><input type="checkbox" class="checkboxes"/></li>
+	<br>
+	<p>RADIOS (ATOM)</p>
+	<li><input type="radio" name="radio" class="radios"/></li>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h6>MOLECULES</h6>
+	<p>BUTTONS</p>
+	<button class="postbtn"><a href="">POST</a></button>
+	<div class="circlecontainer">
+		<button class="circlebtn2"><a href="">1</a></button>
+		<button class="circlebtn1"><a href="">2</a></button>
+	</div>
+	<div class="nav">
+		<button class="navbutton"><a href="">MENU</a></button>
+	</div>
+	<br>
+	<p>SEARCH</p>
+	<div class="search">
+		<form method="get" action="/search" id="search">
+			<input name="q" type="text" size="40" placeholder="Search..." />
+		</form>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h6>ORGANISM</h6>
+	<p>POST BOX</p>
+	<div class="postbackground">
+		<div class="avatar"><img src="http://i.imgur.com/VXXnhMJ.jpg" width="50px"></div>
+		<h3>Geezer McCranky</h3>
+		<h4>January 14 at 8:30 PM</h4>
+		<textarea width="200px" placeholder="Add slander..."></textarea>
+		<div class="image">
+			<i class="fa fa-plus-circle" aria-hidden="true"></i>
+			<h4>Add photos</h4>
+		</div>
+	</div>
+
+
+
+
+
+
+
+</body>
+
+
+</html>

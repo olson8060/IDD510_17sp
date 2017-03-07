@@ -45,35 +45,6 @@
 		width: 200px;
 	}
 
-	.nav {
-		position: absolute;
-		margin-top: 45px;
-		margin-left: 260px;
-	}
-
-	.navbutton {
-		width: 25%;
-		height: 30px;
-		border-radius: 0;
-		background-color: #561823;
-		border: none;
-		margin: -5px;
-		padding: 15%
-		box-shadow: 4px 4px 4px #000000;
-	}
-
-	.navbutton:hover {
-		background-color: #381217;
-	}
-
-	.navbutton:active {
-		background-color: #4d4d4f;
-	}
-
-	.navbutton a {
-		text-decoration: none;
-		color: #f2f2f3;
-	}
 
 	h1 {
 		font-family: 'Raleway', sans-serif;
@@ -124,7 +95,7 @@
 		padding: 20px;
 		margin-top:40px;
 		padding-top: 0px;
-		height: 350px;
+		height: 250px;
 		margin: 0px auto;
 
 	}
@@ -149,11 +120,11 @@
 	textarea {
 		outline: none;
 		resize: none;
-		width: 99%;
-		height: 50px;
+		width: 95%;
+		height: 100px;
 		margin-top: 10px;
+		padding: 10px;
 	}
-
 
 
 	button.postbtn {
@@ -201,7 +172,7 @@
 		text-align: center;
 		background-color: #4d4d4f;
 		border: none;
-		margin-left: 43%;
+		margin-left: 1%;
 		margin-top: 5%;
 	}
 
@@ -225,6 +196,7 @@
 		background-color: white;
 		border: 2px solid #d6d6d6;
 		margin: 0px auto;
+		margin-left: 43%;
 	}
 
 	button.circlebtn2 a {
@@ -256,8 +228,6 @@
 
 	.image {
 		width: 100%;
-		height: 160px;
-		background-color: #EAEAEA;
 		border: none;
 		margin-top: 5px;
 	}
@@ -265,9 +235,9 @@
 	.image i {
 		width: 25px;
 		height: 25px;
-		float: right;
+		float: left;
 		margin-right: -2px;
-		margin-top: 5px;
+		margin-top: 0px;
 		
 	}
 
@@ -277,9 +247,6 @@
 		margin-top: -110px;
 	}
 
-	#search {
-
-	}
 
 	#search input[type="text"] {
 		background-color: #fcfcfc;
@@ -305,86 +272,196 @@
 		width: 150px;
 	}
 
+	.avatar {
+		width: 50px;
+		height: 50px;
+		background-color: green;
+		float: left;
+		margin-top: 20px;
+		margin-right: 10px;
+	}
+
+	input[type=checkbox] {
+		width: 10px;
+		float: left;
+		margin-left: -20px;
+		margin-top: 10px;
+		background-color: red;
+
+	}
+
+	input[type=checkbox]:active {
+		background-color: purple;
+	}
+
+
+
+
+
+
+
+
 
 	/* MEDIA QUERIES START HERE*/
 
-	/* Desktops and laptops ----------- */
-	@media only screen and (max-width: 1600px) {{}
+	/* Desktops and laptops --------------------------------- */
+	@media only screen and (max-width: 1600px) {
+
+		.nav {
+			position: absolute;
+			margin-top: 45px;
+			margin-left: 260px;
+			width: 500px;
+		}
+
+		.navbutton {
+			width: 17%;
+			height: 30px;
+			border-radius: 0;
+			background-color: #561823;
+			border: none;
+			margin: -5px;
+			padding: 15%
+			box-shadow: 4px 4px 4px #000000;
+		}
+
+		.navbutton:hover {
+			background-color: #381217;
+		}
+
+		.navbutton:active {
+			background-color: #4d4d4f;
+		}
+
+		.navbutton a {
+			text-decoration: none;
+			color: #f2f2f3;
+		}
+	}
 
 
 
-	/* iPads  --------------------- */
+	/* iPads  ----------------------------------------- */
 	@media only screen and (max-width: 768px) {
 
-	body {
-		width: 768px;
+		body {
+			width: 400px;
+		}
+
+		.rightcol {
+			width: 350px;
+			height: 500px;
+			margin-left: 25px;
+			margin-top: 20px;
+			background-color: purple;
+		}
+
+		.leftcol {
+			width: 350px;
+			height: 430px;
+			margin-left: 25px;
+			background-color: green;
+
+		}
+
+		button.circlebtn1 {
+			margin-left: 1%;
+		}
+
+		button.circlebtn2 {
+			margin-left: 46%;
+		}
+
+		.logo {
+			width: 200px;
+		}
+
+		.logo img {
+			width: 200px;
+		}
+
+		.nav {
+			position: absolute;
+			margin-top: 45px;
+			margin-left: 250px;
+			width: 300px;
+		}
+
+		.navbutton {
+			width: 17%;
+			height: 30px;
+		}
+
+		textarea {
+			width: 93%;
+		}
+
+		button.postbtn {
+			width: 300px;
+			background-color: white;
+			border: 2px solid #d6d6d6;
+			box-shadow: 4px 4px 6px #381217;
+			padding: 15px;
+			float: left;
+			display: block;
+			margin-left: 25px;
+			margin-top: 2%;
+		}
+
+		button.circlebtn1 {
+			margin-left: 1%;
+			margin-top: 7%;
+		}
+
+		button.circlebtn2 {
+			margin-left: 42%;
+			margin-top: 7%;
+		}
+
+		.navbutton a {
+			font-size: 7px;
+		}
+
 	}
 
-	.rightcol {
-		width: 92%;
-		height: 500px;
-	}
-
-	.leftcol {
-		width: 500px;
-		height: 380px;
-	}
-
-	button.postbtn {
-		margin-left: 200px;
-	}
-
-	button.circlebtn1 {
-		margin-left: 47%;
-	}
-
-	.logo {
-		width: 150px;
-	}
-
-	.logo img {
-		width: 150px;
-	}
-
-	.nav {
-		position: absolute;
-		margin-top: 25px;
-		margin-left: 200px;
-	}
-
-}
 
 
-
-	/* Smartphones ----- */
-	@media only screen and (max-width: 420px) {
+	/* Smartphones -------------------------------------- */
+	@media only screen and (max-width: 400px) {
 
 		body {
-		width: 420px;
+			width: 420px;
+			margin: 0px auto;
+		}
+
+		.rightcol {
+			width: 80%;
+			height: 200px;
+		}
+
+		.leftcol {
+			width: 320px;
+			height: 420px;
+		}
+
+		button.postbtn {
+			margin-left: 10px;
+		}
+
+		button.circlebtn2 {
+			margin-left: 40%;
+		}
+
+		button.postbtn {
+			width: 335px;
+			margin-left: 0px;
+		}
+
+		h1 {
+			margin-top: 110px;
+		}
+
 	}
-
-	.rightcol {
-		width: 80%;
-		height: 500px;
-	}
-
-	.leftcol {
-		width: 320px;
-		height: 420px;
-	}
-
-	button.postbtn {
-		margin-left: 10px;
-	}
-
-	button.circlebtn1 {
-		margin-left: 42%;
-	}
-
-	}
-
-
-
 
 
 
@@ -392,6 +469,12 @@
 
 
 </style>
+
+
+
+
+
+
 
 <!-- __BEGIN BODY__ -->
 
@@ -422,6 +505,8 @@
 
 	<h1>DRAFT A POST. WE DARE YOU.</h1>
 
+
+
 	<!-- __BEGIN LEFT COLUMN__ -->
 
 	<div class="leftcol">
@@ -430,11 +515,21 @@
 			<br><br>
 			Be sure to include the words displayed in the box below for extra style points!</p>
 			<ul>
-				<li><h4>Nasty</h4></li>
-				<li><h4>Rancid</h4></li>
-				<li><h4>Pungent</h4></li>
-				<li><h4>Rude</h4></li>
-				<li><h4>Green</h4></li>
+				<li><input type="checkbox" class="checkboxes" checked="checked"/>
+					<h4>Nasty</h4>
+				</li>
+				<li><input type="checkbox" class="checkboxes"/>
+					<h4>Rancid</h4>
+				</li>
+				<li><input type="checkbox" class="checkboxes"/>
+					<h4>Pungent</h4>
+				</li>
+				<li><input type="checkbox" class="checkboxes" checked="checked"/>
+					<h4>Rude</h4>
+				</li>
+				<li><input type="checkbox" class="checkboxes"/>
+					<h4>Green</h4>
+				</li>
 			</ul>
 		</div>
 
@@ -444,21 +539,21 @@
 
 		<div class="rightcol">
 			<div class="postbackground">
-				<div class="avatar"></div>
+				<div class="avatar"><img src="http://i.imgur.com/VXXnhMJ.jpg" width="50px"></div>
 				<h3>Geezer McCranky</h3>
 				<h4>January 14 at 8:30 PM</h4>
 				<textarea width="200px" placeholder="Add slander..."></textarea>
 				<div class="image">
-					<img src="">
 					<i class="fa fa-plus-circle" aria-hidden="true"></i>
+					<h4>Add photos</h4>
 				</div>
 			</div>
 			<br>
 			<button class="postbtn"><a href="">POST</a></button>
 			<br><br>
 			<div class="circlecontainer">
-				<button class="circlebtn1"><a href="">1</a></button>
-				<button class="circlebtn2"><a href="">2</a></button>
+				<button class="circlebtn2"><a href="">1</a></button>
+				<button class="circlebtn1"><a href="">2</a></button>
 			</div>
 		</div>
 
