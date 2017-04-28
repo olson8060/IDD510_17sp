@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>Cinema Lounge Rooms — Atomic Stylesheet</title>
+
+<head>
+
+	<!-- __BEGIN FONTS__ -->
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,600i" rel="stylesheet">
+
+	<script src="https://use.fontawesome.com/83584a518f.js"></script>
+
+	<!-- ________BEGIN CSS________ -->
+
+	<style>
+
+		header {
+			width: 100%;
+			height: 250px;
+		}
+
+		body{
+			background-color: #21201F;
+			width: 960px;
+			margin: 0px auto;
+		}
+
+
+		.logo img {
+			width: 35%;
+			margin-top: 25px;
+			margin-left: 20px;
+			margin-right: 45px;
+			z-index: 1;
+			float: left;
+		}
+
+		.nav {
+			width: 55%;
+			margin-top: 10px;
+			margin-right: -50px;
+			margin-left: -50px;
+		}
+
+		h1 {
+			color: #EFEAEA;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 15pt;
+		}
+
+		h2 {
+			color: #EFEAEA;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 600;
+			font-size: 14pt;
+		}
+
+		h3 {
+			color: #EFEAEA;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 400;
+			font-size: 10pt;
+		}
+
+		h4 {
+			color: #EFEAEA;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 15pt;
+			margin-left: -40px;
+		}
+
+		h6 {
+			color: #EFEAEA;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 400;
+			font-size: 7pt;
+			margin-top: -5px;
+			margin-bottom: -5px;
+		}
+
+		p {
+			color: #EFEAEA;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 400;
+			font-size: 9pt;
+		}
+
+		button {
+			border: solid 2px #EFEAEA;
+			background-color: #21201F;
+			width: 40%;
+			margin-top: 20px;
+		}
+
+		button:hover {
+			background-color: #961B10;
+			border: solid 2px #961B10;
+		}
+
+		.nav li {
+			list-style-type: none;
+		}
+
+		.nav h3 {
+			width: 80px;
+			text-align: center;
+			float: left;
+			margin-right: 0px;
+			list-style-type: none;
+		}
+
+		.nav h3:hover {
+			color: #dfc46d;
+		}
+
+		.nav img {
+			margin-left: 0px;
+			width: 40px;
+			margin-right: 20px;
+		}
+
+		.roomscontainer {
+			width: 100%;
+			float: left;
+			margin-top: 20px;
+			margin-left: 0px;
+		}
+
+		.roomscontainer h2 {
+			width: 100%;
+			float: left;
+			margin-left: 0px;
+			margin-top: 30px;
+			display: block;
+		}
+
+		.room {
+			width: 308px;
+			height: 380px;
+			float: left;
+			margin-right: 10px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+
+
+		input[type=checkbox] {
+			-webkit-appearance: none;
+			background-color: white;
+			border: 2px solid white;
+			border-radius: 3px;
+			width: 15px;
+			height: 15px;
+			margin-left: 10px;
+			margin-bottom: -30px;
+			margin-top: -90px;
+		}
+
+		input[type=checkbox]:hover {
+			background-color: #dfc46d;
+			border: 2px solid #dfc46d;
+		}
+
+
+		input[type=checkbox]:checked {
+			background-color: #961B10;
+			border: 2px solid #961B10;
+		}
+
+
+
+		.redtaglinearea {
+			background-color: #961B10;
+			width: 960px;
+			height: 120px;
+			text-align: center;
+			margin-top: 0px;
+			margin-bottom: -20px;
+		}
+
+		.redtaglinearea h3 {
+			font-size: 30px;
+			font-style: italic;
+			text-align: center;
+			padding-top: 35px;
+		}
+
+		.social ul {
+			width: 350px;
+			height: 20px;
+			margin-top: 30px;
+			margin-bottom: 0px;
+			margin-left: -45px;
+		}
+
+
+		.social li {
+			list-style-type: none;
+			float: left;
+			margin-right: 8px;
+		}
+
+		.social img {
+			width: 40px;
+		}
+
+		.roomimg img {
+			width: 308px;
+			height: 159px;
+			margin: 0px auto;
+			margin-bottom: 10px;
+			opacity: .9;
+		}
+
+		.watchlistcontainer {
+			width: 100%;
+			height: 300px;
+			margin-top: 20px;
+			margin-left: 0px;
+			margin-bottom: 50px;
+		}
+
+		.watchlistcontainer button {
+			width: 25%;
+		}
+
+		.fmaimg img {
+			width: 50%;
+		}
+
+		.grayblockwredtop {
+			border-top: 30px solid #ce372a;
+		}
+
+		.grayblockwredtop {
+			background-color: #EFEAEA;
+			padding: 20px;
+			padding-top: 10px;
+			margin-bottom: 5px;
+			width: 960px;
+		}
+
+
+		.grayblockwredtop li {
+			list-style-type: none;
+			width: 100%;
+			height: 30px;
+		}
+
+		.grayblockwredtop h1 {
+			color: #21201F;
+		}
+
+		.grayblockwredtop p {
+			color: #21201F;
+			margin-left: 0px;
+		}
+
+		.grayblockwredtop li p {
+			color: #21201F;
+			margin-left: 35px;
+		}
+
+		.grayblockwredtop ul {
+			margin-top: -20px;
+			margin-bottom: 15px;
+			width:100%;
+		}
+
+		.grayblockwredtop button {
+			margin-top: 35px;
+			margin-bottom: 5px;
+		}
+
+
+
+
+
+		
+
+	</style>
+	
+
+</head>
+
+<!-- ______________BEGIN BODY______________ -->
+
+<body>
+
+	<h4>Atoms</h4>
+	<div class="logo"><img src="http://i.imgur.com/sHBwnMl.png" alt="Cinema Lounge"/></div>
+	<br>
+	<div class="fmaimg"><img src="http://i.imgur.com/KvfCtKG.jpg" alt="rooms" /></div>
+	<br>
+	<h2>Reserve a Room</h2>
+	<div class="redtaglinearea"></div>
+	<br>
+	<div class="social">
+		<ul>
+			<li><img src="http://i.imgur.com/d9ziAKn.png" alt="facebook" /></li></ul></div>
+			<br>
+			<br>
+			<h3>Be in the night scene.</h3>
+			<br>
+			<h6>© 2017 Cinema Lounge</h6>
+
+			<br>
+			<br>
+			<br>
+			<br>
+
+			<h4>Molecules</h4>
+			<div class="nav">
+				<ul>
+					<li><h3>showtimes</h3></li>
+					<li><h3>movies</h3></li>
+					<li><h3>events</h3></li>
+					<li><h3>rooms</h3></li>
+					<li><h3>more</h3></li>
+					<li><img src="http://i.imgur.com/97KjDHC.png" alt="Profile Pic" /></li>
+				</ul>
+			</div>
+			<br>
+			<button><h3>RESERVE</h3></button>
+			<br>
+			<br>
+			<br>
+			<div class="grayblockwredtop">
+				<ul>
+					<li><input type="checkbox" class="checkboxes"/>
+						<p>Email me a reminder</p>
+					</li>
+				</ul>
+				</div>
+
+				<div class="social">
+					<ul>
+						<li><img src="http://i.imgur.com/d9ziAKn.png" alt="facebook" /></li>
+						<li><img src="http://i.imgur.com/VD3oP7G.png" alt="twitter" /></li>
+						<li><img src="http://i.imgur.com/AuUawnr.png" alt="google plus" /></li>
+						<li><img src="http://i.imgur.com/XzoS1JP.png" alt="instagram" /></li>
+						<li><img src="http://i.imgur.com/ri6dzgs.png" alt="youtube" /></li>
+					</ul>
+
+					<br>
+					<br>
+					<div class="redtaglinearea">
+						<h3>Be in the night scene.</h3>
+					</div>
+
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+
+					<h4>Organisms</h4>
+
+					<div class="roomscontainer">
+						<div class="room">
+							<div class="roomimg"><img src="http://i.imgur.com/gQ4go8Z.png" alt="Posh Party Room Image" /></div>
+							<h1>Posh Party Room</h1>
+							<h6>$25/hour</h6>
+							<p>Look no further, this room is stylish enough for a daytime party or a midnight masqarade. Seats 12 comfortably.</p>
+							<button><h3>RESERVE</h3></button>
+						</div>
+
+
+						<div class="room">
+							<div class="roomimg"><img src="http://i.imgur.com/139KW7L.png" alt="large party room" /></div>
+							<h1>Large Party Room</h1>
+							<h6>$60/hour</h6>
+							<p>Whether you're celebrating a milestone or just having a large social gathering, this room has it all. Seats 24 comfortably.</p>
+							<button><h3>RESERVE</h3></button>
+						</div>
+					</div>
+
+					<br>
+					<br>
+					<br>
+
+
+
+					<div class="watchlistcontainer">
+						<h2>Private Room Watchlist</h2>
+						<div class="grayblockwredtop">
+							<h1>Batman</h1>
+							<p>Batman is coming to the Cinema Lounge on Friday, May 13.</p>
+							<ul>
+								<li><input type="checkbox" class="checkboxes"/>
+									<p>Email me a reminder</p>
+								</li>
+								<li><input type="checkbox" class="checkboxes"/>
+									<p>Text me a reminder</p>
+								</li>
+							</ul>
+							<button><h3>REMOVE</h3></button>
+						</div>
+
+
+
+					</div>
+
+
+
+
+
+
+				</body>
+
+
+
+
+				</html>

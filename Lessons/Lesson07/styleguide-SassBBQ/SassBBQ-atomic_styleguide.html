@@ -48,8 +48,10 @@
 			font-family: 'Raleway', sans-serif;
 			font-weight: 700;
 			font-size: 10pt;
-			margin-left: 20px;
+			margin-left: 40px;
 			margin-bottom: 10px;
+			margin-top: -15px;
+			float: left;
 		}
 
 		h5 {
@@ -83,6 +85,7 @@
 			float: left;
 			display: block;
 			margin-left: 20px;
+			margin-top: 10px;
 		}
 
 		button.postbtn:hover {
@@ -104,6 +107,8 @@
 
 		.circlecontainer {
 			width: 200px;
+			margin-left: 125px;
+			margin-top: 5px;
 		}
 
 		button.circlebtn1 {
@@ -160,22 +165,24 @@
 
 		.logo img {
 			width: 200px;
+			display: block;
 		}
 
 		.nav {
 			margin-top: 20px;
 			margin-left: 20px;
-			width: 70px;
+			width: 600px;
+			height: 100px;
 		}
 
 		.navbutton {
-			width: 70px;
-			height: 30px;
+			width: 100px;
+			height: 50px;
 			background-color: #561823;
 			border: none;
 			margin: -5px;
-			padding: 15%;
 			box-shadow: 4px 4px 4px #000000;
+			padding: 5px;
 		}
 
 		.navbutton:hover {
@@ -252,14 +259,15 @@
 			-webkit-appearance: none;
 			width: 13px;
 			height: 13px;
-			float: left;
-			margin-right: 8px;
+			margin-right: 100%;
 			margin-left: 20px;
-			margin-bottom: 20px;
+			margin-bottom: 0px;
 			background-color: white;
 			border: 2px solid #d6d6d6;
 			border-radius: 100%;
+			float: left;
 		}
+
 
 		input[type=radio]:hover {
 			background-color: #d6d6d6;
@@ -281,8 +289,8 @@
 			border: 2px solid #d6d6d6;
 			box-shadow: 4px 4px 6px #381217;
 			padding: 20px;
-			margin-top:40px;
-			padding-top: 20px;
+			margin-top:20px;
+			padding-top: 15px;
 			height: 220px;
 			width:450px;
 			margin-left: 20px;
@@ -340,6 +348,55 @@
 			margin-bottom: -15px;
 		}
 
+		.backgroundimage {
+			width:768px;
+			height: 220px;
+			float: left;
+			margin-bottom: 40px;
+			display: block;
+			margin-right: 100%;
+
+		}
+
+		.backgroundimage img {
+			width: 768px;
+			height: 235px;
+		}
+
+		.questionaire {
+			background-color: white;
+			border: 2px solid #d6d6d6;
+			box-shadow: 4px 4px 6px #381217;
+			padding: 20px;
+			padding-top: 0px;
+			width: 400px;
+			height: 170px;
+			margin-top: 10px;
+			margin-left: 20px;
+			margin-bottom: 20px;
+			display: block;
+		}
+
+		.questionaire ul {
+			list-style-type: none;
+			margin-left: -20px;
+			margin-top: -15px;
+		}
+
+		.questionaire ul li {
+			margin-top: -4px;
+		}
+
+		.postbtncontainer {
+			width: 500px;
+			height: 600px;
+			margin-left: 60px;
+			margin-top: -25px;
+
+		}
+
+
+
 		
 
 
@@ -352,10 +409,14 @@
 <!-- __BEGIN BODY__ -->
 
 <body>
-	<div class="logo"><img src="http://i.imgur.com/EJJTO9k.png" alt="logo"/></div>
 	<h1>Sass Woodfire Barbecue Stylesheet</h1>
-	<br>
 	<h6>ATOMS</h6>
+	<br>
+	<p>LOGO AND IMAGES</p>
+	<div class="logo"><img src="http://i.imgur.com/EJJTO9k.png" alt="logo"/></div>
+	<br>
+	<div class="backgroundimage"><img src="http://i.imgur.com/4k8aUb8.png" alt="photo of grill"/></div>
+	<br>
 	<p>HEADINGS</p>
 	<h1>This is an H1.</h1>
 	<h2>This is an H2.</h2>
@@ -367,13 +428,14 @@
 	<p>CHECKBOXES</p>
 	<li><input type="checkbox" class="checkboxes"/></li>
 	<br>
-	<p>RADIOS (ATOM)</p>
+	<p>RADIOS</p>
 	<li><input type="radio" name="radio" class="radios"/></li>
 	<br>
 	<br>
 	<br>
 	<br>
 	<h6>MOLECULES</h6>
+	<br>
 	<p>BUTTONS</p>
 	<button class="postbtn"><a href="">POST</a></button>
 	<div class="circlecontainer">
@@ -383,7 +445,6 @@
 	<div class="nav">
 		<button class="navbutton"><a href="">MENU</a></button>
 	</div>
-	<br>
 	<p>SEARCH</p>
 	<div class="search">
 		<form method="get" action="/search" id="search">
@@ -394,7 +455,8 @@
 	<br>
 	<br>
 	<br>
-	<h6>ORGANISM</h6>
+	<h6>ORGANISMS</h6>
+	<br>
 	<p>POST BOX</p>
 	<div class="postbackground">
 		<div class="avatar"><img src="http://i.imgur.com/VXXnhMJ.jpg" width="50px"></div>
@@ -404,6 +466,37 @@
 		<div class="image">
 			<i class="fa fa-plus-circle" aria-hidden="true"></i>
 			<h4>Add photos</h4>
+		</div>
+	</div>
+	<br>
+	<p>NAVIGATION</p>
+	<div class="nav">
+		<button class="navbutton"><a href="">MENU</a></button>
+		<button class="navbutton"><a href="">SPECIALTIES</a></button>
+		<button class="navbutton"><a href="">EVENTS</a></button>
+		<button class="navbutton"><a href="">RESERVE</a></button>
+		<button class="navbutton"><a href="">ABOUT</a></button>
+		<button class="navbutton"><a href="">REVIEW</a></button>
+	</div>
+	<p>QUESTIONAIRE BOX</p>
+	<div class="questioncontainer">
+		<div class="questionaire">
+			<h5>How was the food?</h5>
+			<ul>
+				<li><input type="radio" name="radio" class="radios"/><h4>Freakin' Great</h4></li>
+				<li><input type="radio" name="radio" class="radios"/><h4>Savory</h4></li>
+				<li><input type="radio" name="radio" class="radios"/><h4>Not Great</h4></li>
+				<li><input type="radio" name="radio" class="radios"/><h4>The Worst Ever</h4></li>
+			</ul>
+		</div>
+		<br>
+		<div class="postbtncontainer">
+			<button class="postbtn"><a href="">POST</a></button>
+			<br><br>
+			<div class="circlecontainer">
+				<button class="circlebtn2"><a href="">1</a></button>
+				<button class="circlebtn1"><a href="">2</a></button>
+			</div>
 		</div>
 	</div>
 

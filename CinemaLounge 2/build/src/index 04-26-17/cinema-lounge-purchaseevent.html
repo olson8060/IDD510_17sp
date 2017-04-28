@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>Cinema Lounge Purchase</title>
+
+<head>
+
+	<!-- __BEGIN FONTS__ -->
+
+	<link rel="shortcut icon" href="images/favicon.png" />
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,600i" rel="stylesheet">
+
+	<script src="https://use.fontawesome.com/83584a518f.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
+
+
+</head>
+
+<!-- ______________BEGIN BODY______________ -->
+
+<body>
+
+	<div class="backpopcorn"><img src="http://i.imgur.com/4GwyFF9.jpg"/></div>
+
+	<header>
+		<div class="nav">
+			<ul>
+				<li><div class="logo"><a href="index.html"><img src="http://i.imgur.com/sHBwnMl.png" alt="Cinema Lounge"/></a></div></li>
+				<li><a href="cinema-lounge-showtimes.html"><h3>showtimes</h3></a></li>
+				<li><a href="cinema-lounge-movies.html"><h3>movies</h3></a></li>
+				<li><a href="cinema-lounge-events.html"><h3>events</h3></a></li>
+				<li><a href="cinema-lounge-rooms.html"><h3>rooms</h3></a></li>
+				<li><a href="cinema-lounge-dining.html"><h3>dining</h3></a></li>
+				<li><a href="cinema-lounge-profile.html"><div class="avatar"><img src="http://i.imgur.com/5fSTw9i.png" width="50"/></div></a></li>
+			</ul>
+		</div>
+
+		<div class="mobilenav">
+			<div class="logo"><img src="http://i.imgur.com/sHBwnMl.png" alt="Cinema Lounge"/></div>
+			<div class="menuavatar">
+				<div class="menu">
+					<div class="dropdownmenu">
+						<button class="dropbtnmenu"><i class="fa fa-bars" aria-hidden="true"></i></button>
+						<div class="dropdown-content">
+							<a href="index.html">home</a>
+							<a href="cinema-lounge-showtimes.html">showtimes</a>
+							<a href="cinema-lounge-movies.html">movies</a>
+							<a href="cinema-lounge-events.html">events</a>
+							<a href="cinema-lounge-rooms.html">rooms</a>
+							<a href="cinema-lounge-dining.html">dining</a>
+							<a href="cinema-lounge-about.html">about</a>
+							<a href="cinema-lounge-locations.html">locations</a>
+						</div>
+					</div>
+					<div class="profile"><a href="cinema-lounge-profile.html"><div class="avatar"><img src="http://i.imgur.com/5fSTw9i.png"/></a></div>
+				</div>
+			</div>
+		</div>	
+	</header>
+	
+	<div class="fmaimg"><img src="http://i.imgur.com/KvfCtKG.jpg" alt="rooms" /></div>
+
+
+
+	<!-- ______________END HEADER______________ -->
+
+	<div class="container">
+
+		<h2>ORDER SUMMARY</h2>
+
+		<div class="showtimes">
+			<h1>Bachelorette Finale Screening</h1>
+			<img src="images/rose.jpg" width="410px"/>
+			<h6>July 23, 6 p.m.</h6>
+			<p>Eat some delicious appetizers and mingle with a refreshing drink as we play the previous 2 episode of the Bachelorette leading up to the finale. We will start in the Large Party Room.</p>	
+		</div>
+
+		<div class="showtimes">
+			<h1>Change Location</h1>
+			<div class="fulldrop">
+				<label for="country"><p>Location:</p></label>
+				<select id="country" name="country">
+					<option value="Philadelphia">Philadelphia</option>
+					<option value="New York">New York</option>
+					<option value="Sacramento">Sacramento</option>
+				</select>
+			</div><br>
+			<br>
+
+			<h1>Text Movie Details to Friends</h1>
+			<input type="text" id="name" name="firstname" padding="5" placeholder="Name...">
+			<input type="text" id="phone" name="phone" padding="5" placeholder="Phone Number...">
+
+			<button><h3>INVITE MORE <i class="fa fa-plus" aria-hidden="true"></i></h3></button>
+
+
+			<br>
+		</div>
+
+		<div class="fullwidth">
+			<h1>Card Information</h1>
+			<div class="halfdrop">
+				<label for="country"><p>Type of Card:</p></label>
+				<select id="country" name="country">
+					<option value="australia">Debit</option>
+					<option value="canada">Credit</option>
+				</select>
+			</div>
+
+			<div class="halfdrop">
+				<label for="country"><p>Company:</p></label>
+				<select id="country" name="country">
+					<option value="australia">Visa</option>
+					<option value="canada">MasterCard</option>
+					<option value="canada">Discover</option>
+				</select>
+			</div>
+
+			<br>
+
+			<p><i class="fa fa-star" aria-hidden="true"></i> This is your preferred payment method.</p>
+
+			<div class="halfdrop">
+				<p>Name on Card:</p>
+				<input type="text" id="phone" name="phone" padding="5" placeholder="Maria Gomez">
+			</div>
+
+			<div class="halfdrop">
+				<p>Card Number:</p>
+				<input type="text" id="phone" name="phone" padding="5" placeholder="**** **** **** 3928">
+			</div>
+
+			<div class="halfdrop">
+				<p>Expiration Date:</p>
+				<input type="text" id="phone" name="phone" padding="5" placeholder="3/21">
+			</div>
+
+			<div class="halfdrop">
+				<p>Security Code:</p>
+				<input type="text" id="phone" name="phone" padding="5" placeholder="***">
+			</div>
+
+			<div class="halfdrop">
+				<p>Billing Address:</p>
+				<input type="text" id="phone" name="phone" padding="5" placeholder="235 Way Rd, Woods, PA 12393">
+			</div>
+			
+		</div>
+
+		<br>
+
+		<div class="showtimes">
+			<h1>Gift Card</h1>
+			<p>Enter Code:</p>
+			<input type="text" id="phone" name="phone" padding="5">
+		</div>
+
+		<div class="showtimes">
+			<h1>Promotional Discount</h1>
+			<p>Promo Code:</p>
+			<input type="text" id="phone" name="phone" padding="5" placeholder="SummerEvent17">
+		</div>
+
+		<div class="fullwidth">
+			<div class="halfdrop">
+				<h1>Pricing</h1>
+				<p>2 Adults</p>
+				<p>FinalRose</p>
+			</div>
+
+			<br>
+
+			<div class="halfdropright">
+				<br>
+				<br>
+				<p>(2) $12.00</p>
+				<p>- $4.00</p>
+			</div>
+
+			<hr>
+			<div class="pricetotal"><h1>$20.00</h1></div>
+
+			<div class="fullbtn"><a href="cinema-lounge-confirmed.html"><button><h3>CONFIRM</h3></button></a></div>
+
+		</div>
+
+
+	</div>
+</div>
+
+
+<footer>
+	<div class="social">
+		<ul>
+			<li><a href="http://imgur.com/d9ziAKn"><img src="http://i.imgur.com/d9ziAKn.png" alt="facebook" /></a></li>
+			<li><a href="http://imgur.com/VD3oP7G"><img src="http://i.imgur.com/VD3oP7G.png" alt="twitter" /></a></li>
+			<li><a href="http://imgur.com/AuUawnr"><img src="http://i.imgur.com/AuUawnr.png" alt="google plus" /></a></li>
+			<li><a href="http://imgur.com/XzoS1JP"><img src="http://i.imgur.com/XzoS1JP.png" alt="instagram" /></a></li>
+			<li><a href="http://imgur.com/ri6dzgs"><img src="http://i.imgur.com/ri6dzgs.png" alt="youtube" /></a></li>
+		</ul>
+	</div>
+	<div class="redtaglinearea">
+		<ul>
+			<li><a href="cinema-lounge-about.html"><p>about</p></a></li>
+			<li><a href="cinema-lounge-locations.html"><p>locations</p></a></li>
+		</ul>
+
+		<h3>Be in the night scene.</h3>
+		<h4>&copy; 2017 Cinema Lounge</h4>
+	</div>
+</footer>
+
+
+
+
+</body>
+
+
+
+
+</html>
